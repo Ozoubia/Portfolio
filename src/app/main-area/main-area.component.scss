@@ -1,0 +1,26 @@
+.container{
+    margin-top: 6rem;
+
+    .main-content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+ }
+}
+
+.face-img{
+    height: 20%;
+    width: 20%;
+    margin: 2rem;
+}
+
+.title-text{
+    font-weight: 600;
+}
+
+.primary-button{
+    background-color: #1FA2FF;
+    color:whitesmoke;
+    font-weight: bold;
+}

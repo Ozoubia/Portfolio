@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 // added
 import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './navbar/navbar.component';
+import { MainAreaComponent } from './main-area/main-area.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
+    MainAreaComponent,
 
   ],
   imports: [
