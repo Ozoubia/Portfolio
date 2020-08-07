@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MainAreaComponent } from './main-area/main-area.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { MainAreaComponent } from './main-area/main-area.component';
     AppComponent,
     NavbarComponent,
     MainAreaComponent,
+    AboutMeComponent,
 
   ],
   imports: [
