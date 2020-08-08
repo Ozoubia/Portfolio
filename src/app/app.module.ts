@@ -11,6 +11,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MainAreaComponent } from './main-area/main-area.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsAreaComponent } from './skills-area/skills-area.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { SkillsAreaComponent } from './skills-area/skills-area.component';
     MainAreaComponent,
     AboutMeComponent,
     SkillsAreaComponent,
+    ProjectsComponent,
 
   ],
   imports: [
