@@ -10,7 +10,6 @@
 }
 
 .skill-logo{
-
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -18,6 +17,11 @@
     
     img{
         height: 8rem;
-        
     }
 }
+
+.card-title{
+    display: flex;
+    justify-content: center;
+}
+
