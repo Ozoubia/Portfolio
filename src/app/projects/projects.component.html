@@ -1,5 +1,64 @@
 <div class="container">
     <div class="main-content">
-        <h1>Personel projects</h1>
+        <h1 class="text-uppercase">Personel projects</h1>
+        <!-- filter buttons  -->
+        <div class="buttons-group">
+            <button #btn type="button" data-filter=".all" class="active" >All</button>
+            <button #btn type="button" data-filter=".web"  >Web developement</button>
+            <button #btn type="button" data-filter=".mobile" >Mobile development</button>
+            <button #btn type="button" data-filter="desktop">Desktop developement</button>
+            <button #btn type="button" data-filter="dataScience">Data science</button>
+        </div>
+        <!-- projects grid -->
+        <div class="row grid">
+            <!-- first project  -->
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item all web">
+                <!-- project image  -->
+                <div class="img">
+                    <img src="../../assets/dummy.JPG" class="img-fluid">
+                </div>
+                <!-- project title  -->
+                <div class="title py-4">
+                    <h4 class="text-uppercase">Sample Text</h4>
+                    <span class="text-secondary">web, portfolio</span>
+                </div>
+            </div>
+            <!-- second project  -->
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item all web">
+                <!-- project image  -->
+                <div class="img">
+                    <img src="../../assets/dummy.JPG" class="img-fluid">
+                </div>
+                <!-- project title  -->
+                <div class="title py-4">
+                    <h4 class="text-uppercase">Sample Text</h4>
+                    <span class="text-secondary">web, portfolio</span>
+                </div>
+            </div>
+            <!-- third project  -->
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item all mobile">
+                <!-- project image  -->
+                <div class="img">
+                    <img src="../../assets/dummy.JPG" class="img-fluid">
+                </div>
+                <!-- project title  -->
+                <div class="title py-4">
+                    <h4 class="text-uppercase">Sample Text</h4>
+                    <span class="text-secondary">mobile, portfolio</span>
+                </div>
+            </div>
+            <!-- forth project  -->
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item all ds">
+                <!-- project image  -->
+                <div class="img">
+                    <img src="../../assets/dummy.JPG" class="img-fluid">
+                </div>
+                <!-- project title  -->
+                <div class="title py-4">
+                    <h4 class="text-uppercase">Sample Text</h4>
+                    <span class="text-secondary">data science, portfolio</span>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
