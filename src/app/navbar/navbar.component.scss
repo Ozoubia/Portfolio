@@ -3,18 +3,16 @@
 }
 
 .navbar-brand {
-
   img {
     height: 1.5rem;
   }
 }
 
-.navbar {
-  //   padding: 1rem 10rem;
-}
-
-.fa-1x {
-  font-size: 1.5rem;
+// used for the opacity of the navbar
+.navColor {
+  background-color: var(--dark-color);
+  /*whichever you want*/
+  opacity: 0.8;
 }
 
 .navbar-toggler {
@@ -25,15 +23,14 @@
   color: var(--blue-color);
 }
 
-
-
 .nav-link {
   font-family: var(--lato);
   text-transform: uppercase;
   font-weight: 500;
-  // padding: 1.7rem;
   color: var(--blue-color);
 }
+
+
 
 // // active links
 // .header .menu .navbar-nav .active a {
@@ -43,38 +40,65 @@
 //   background: var(--primary-color);
 // }
 
-.navbar-nav a:hover {
-  background: var(--dark-blue-color);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
-
-
-
-@media (min-width: 576px) {
-  .navbar {
-    // padding: 1rem 2rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .navbar {
-    padding: 1rem 2rem;
-  }
-}
-
-
+// the hover effect on menu items only works in large devices
 @media (min-width: 992px) {
-  .navbar {
-    padding: 1rem 2rem;
+  .navbar-nav a:hover {
+    background: var(--blue-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
-}
 
 
-@media (min-width: 1200px) {
-  .navbar {
-    padding: 1rem 2rem;
+  // hover effect on nav links
+  .hover_effect {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    display: block;
+    //   width: 100%;
+    padding: 1px;
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    //   color: #2C3E50;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: var(--lato);
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--blue-color);
+
+  }
+
+  .hover_effect:after {
+    content: "";
+    height: 2px;
+    left: 0;
+    width: 1px;
+    position: absolute;
+    -webkit-transition: width 1s ease, background-color 1s ease;
+    -moz-transition: width 1s ease, background-color 1s ease;
+    -ms-transition: width 1s ease, background-color 1s ease;
+    -o-transition: width 1s ease, background-color 1s ease;
+    transition: width 1s ease, background-color 1s ease;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .hover_effect:hover {
+    color: var(--blue-color);
+    -webkit-transition: color 1s ease;
+    -moz-transition: color 1s ease;
+    -ms-transition: color 1s ease;
+    -o-transition: color 1s ease;
+    transition: color 1s ease;
+    cursor: pointer;
+  }
+
+  .hover_effect:hover:after,
+  .hover_effect:focus:after {
+    width: 100%;
+    background-color: var(--blue-color);
   }
 }
