@@ -55,12 +55,10 @@
   .hover_effect {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     display: block;
-    //   width: 100%;
     padding: 1px;
     position: relative;
     z-index: 2;
     text-decoration: none;
-    //   color: #2C3E50;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -76,6 +74,7 @@
     height: 2px;
     left: 0;
     width: 1px;
+    bottom: 2px;
     position: absolute;
     -webkit-transition: width 1s ease, background-color 1s ease;
     -moz-transition: width 1s ease, background-color 1s ease;
