@@ -1,31 +1,80 @@
-.header .menu .navbar .navbar-brand{
-    padding: 0 2rem 0 5rem;
+.header {
+  margin-bottom: 2rem;
 }
 
-.header .menu .navbar{
-   padding: 1rem 10rem; 
+.navbar-brand {
+
+  img {
+    height: 1.5rem;
+  }
 }
 
-// header links style
-.header .menu .nav-item .nav-link{
-    font-family: var(--lato);
-    text-transform: uppercase;
-    font-weight: 500;
-    // padding: 1.7rem;
-    color: var(--title-color);
+.navbar {
+  //   padding: 1rem 10rem;
+}
+
+.fa-1x {
+  font-size: 1.5rem;
+}
+
+.navbar-toggler {
+  outline: transparent;
+}
+
+.navbar-toggler-icon {
+  color: var(--blue-color);
+}
+
+
+
+.nav-link {
+  font-family: var(--lato);
+  text-transform: uppercase;
+  font-weight: 500;
+  // padding: 1.7rem;
+  color: var(--blue-color);
 }
 
 // // active links
-// .header .menu .navbar-nav .active a{
-//     -webkit-background-clip: text;
-//     background-clip: text;
-//     -webkit-text-fill-color: transparent;
-//     // background: var(--primary-color);
+// .header .menu .navbar-nav .active a {
+//   -webkit-background-clip: text;
+//   background-clip: text;
+//   -webkit-text-fill-color: transparent;
+//   background: var(--primary-color);
 // }
 
-.header .menu .navbar-nav a:hover{
-    background: var(--primary-color);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+.navbar-nav a:hover {
+  background: var(--dark-blue-color);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+@media (min-width: 576px) {
+  .navbar {
+    // padding: 1rem 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    padding: 1rem 2rem;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .navbar {
+    padding: 1rem 2rem;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .navbar {
+    padding: 1rem 2rem;
+  }
 }
