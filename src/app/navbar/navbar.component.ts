@@ -24,9 +24,18 @@ export class NavbarComponent implements OnInit {
     document.getElementById('projects').scrollIntoView()
   }
 
+  experienceBtn() {
+    document.getElementById('experience').scrollIntoView()
+  }
+
+  educationBtn() {
+    document.getElementById('education').scrollIntoView()
+  }
+
   contactBtn() {
     document.getElementById('contact').scrollIntoView()
   }
+
 
 
 }

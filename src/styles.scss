@@ -4,7 +4,7 @@ body {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  background-color: var(--gray-color);
+  background-color: #F5F5F5;
   // background: linear-gradient(180deg, #202833 0%, #0B0C10 100%);
   width: 100%;
   height: 100%;
@@ -15,7 +15,7 @@ body {
 
 :root {
   --gray-color: #202833;
-  --dark-color: #0B0C10;
+  --dark-color: #222222;
   --light-gray-color: #C5C6C8;
   --blue-color: #66FCF1;
   --dark-blue-color: #46A29F;

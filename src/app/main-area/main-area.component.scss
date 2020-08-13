@@ -1,22 +1,35 @@
-.container {
-  margin-top: 9rem;
+.container-fluid {
+  background-color: var(--dark-color);
+  margin-top: -2rem;
 
   .main-content {
+
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding-top: 6rem;
 
   }
 }
 
 .face-img {
-  height: 20%;
-  width: 20%;
+  height: 14%;
+  width: 14%;
   margin: 2rem;
 
 }
 
 .title-text {
   font-weight: 600;
+  color: #BBBBBB;
+}
+
+.contact-icons {
+  margin-bottom: 2rem;
+
+  // icon style
+  i {
+    color: var(--blue-color);
+  }
 }
