@@ -1,9 +1,6 @@
 .container-fluid {
-  background-color: var(--dark-color);
-  margin-top: -2rem;
 
   .main-content {
-
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -14,13 +11,19 @@
 }
 
 .face-img {
-  height: 14%;
-  width: 14%;
+  height: 12rem;
+  width: 12rem;
   margin: 2rem;
-
 }
 
 .title-text {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #BBBBBB;
+}
+
+.sub-title-text {
+  font-size: 1.4rem;
   font-weight: 600;
   color: #BBBBBB;
 }
@@ -30,6 +33,136 @@
 
   // icon style
   i {
-    color: var(--blue-color);
+    color: var(--gray-color);
+  }
+}
+
+// used for the scroll down button
+#mouse-scroll {
+  position: relative;
+  margin: auto;
+  cursor: pointer;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 9999;
+}
+
+#mouse-scroll span {
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  margin: 0 0 3px 5px;
+}
+
+#mouse-scroll .mouse {
+  height: 21px;
+  width: 14px;
+  border-radius: 10px;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  border: 2px solid #ffffff;
+  top: 170px;
+}
+
+#mouse-scroll .down-arrow-1 {
+  margin-top: 6px;
+}
+
+#mouse-scroll .down-arrow-1,
+#mouse-scroll .down-arrow-2,
+#mouse-scroll .down-arrow-3 {
+  -webkit-animation: mouse-scroll 1s infinite;
+  -moz-animation: mouse-scroll 1s infinite;
+  animation: mouse-scroll 1s infinite;
+}
+
+#mouse-croll .down-arrow-1 {
+  -webkit-animation-delay: .1s;
+  animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+#mouse-scroll .down-arrow-2 {
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+#mouse-scroll .down-arrow-3 {
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+  -moz-animation-dekay: .3s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+#mouse-scroll .mouse-in {
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: #ffffff;
+  position: relative;
+}
+
+#mouse-scroll .mouse-in {
+  -webkit-animation: animated-mouse 1.2s ease infinite;
+  animation: animated-mouse 1.2s ease infinite;
+  -moz-animation: mouse-animated 1.2s ease infinite;
+}
+
+@-webkit-keyframes animated-mouse {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+
+@-webkit-keyframes mouse-scroll {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
   }
 }

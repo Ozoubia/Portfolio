@@ -1,27 +1,26 @@
-.container{
-    margin-top: 6rem;
+.container {
+  margin-top: 6rem;
 
-    .main-content{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
- }
+  .main-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-.about-img{
-    img{
-        width: 25rem;
-    }
+.about-img {
+  img {
+    width: 25rem;
+  }
 }
 
-.primary-button{
-    background-color: #1FA2FF;
-    color:whitesmoke;
-    font-weight: bold;
+.primary-button {
+  background-color: var(--blue-color);
+  color: whitesmoke;
+  font-weight: bold;
 }
 
-.para{
-    color: var(--text-color);
+.para {
+  color: var(--text-color);
 }
-

@@ -12,22 +12,23 @@
 .navColor {
   background-color: var(--dark-color);
   /*whichever you want*/
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .navbar-toggler {
   outline: transparent;
 }
 
+//hamburger icon color
 .navbar-toggler-icon {
-  color: var(--blue-color);
+  color: var(--light-gray-color);
 }
 
 .nav-link {
   font-family: var(--lato);
   text-transform: uppercase;
-  font-weight: 500;
-  color: var(--blue-color);
+  font-weight: bold;
+  color: var(--gray-color);
 }
 
 
@@ -44,7 +45,7 @@
 // the hover effect on menu items only works in large devices
 @media (min-width: 992px) {
   .navbar-nav a:hover {
-    background: var(--blue-color);
+    background: var(--light-gray-color);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -64,8 +65,8 @@
     -webkit-box-sizing: border-box;
     font-family: var(--lato);
     text-transform: uppercase;
-    font-weight: 500;
-    color: var(--blue-color);
+    font-weight: bold;
+    color: var(--gray-color);
 
   }
 
@@ -86,7 +87,7 @@
   }
 
   .hover_effect:hover {
-    color: var(--blue-color);
+    color: var(--light-gray-color);
     -webkit-transition: color 1s ease;
     -moz-transition: color 1s ease;
     -ms-transition: color 1s ease;
@@ -98,6 +99,6 @@
   .hover_effect:hover:after,
   .hover_effect:focus:after {
     width: 100%;
-    background-color: var(--blue-color);
+    background-color: var(--light-gray-color);
   }
 }

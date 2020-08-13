@@ -12,4 +12,7 @@ export class MainAreaComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  scrollDownBtn() {
+    document.getElementById('about').scrollIntoView();
+  }
 }
