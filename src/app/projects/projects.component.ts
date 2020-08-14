@@ -1,4 +1,4 @@
-import { Component,  OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 
 
@@ -8,16 +8,17 @@ import { Component,  OnInit } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 
-export class ProjectsComponent implements OnInit{
-  
+export class ProjectsComponent implements OnInit {
+
   constructor() { }
 
- 
-  
+  projectName = "minesweeper"
+
+
   ngOnInit(): void {
 
   }
 
- 
+
 
 }

@@ -14,6 +14,7 @@ import { SkillsAreaComponent } from './skills-area/skills-area.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { PrjTemplateComponent } from './prj-template/prj-template.component';
 
 
 
@@ -27,6 +28,7 @@ import { FooterComponent } from './footer/footer.component';
     ProjectsComponent,
     ContactComponent,
     FooterComponent,
+    PrjTemplateComponent,
 
   ],
   imports: [
