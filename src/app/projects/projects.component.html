@@ -3,16 +3,20 @@
     <h1 class="title-style text-uppercase">Personel projects</h1>
     <!-- filter buttons  -->
     <div class="buttons-group">
-      <button>All</button>
-      <button>Web developement</button>
-      <button>Mobile development</button>
-      <button>Desktop developement</button>
+      <button (click)="filterSelection('all')">All</button>
+      <button (click)="filterSelection('web')">Web developement</button>
+      <button (click)="filterSelection('mobile')">Mobile development</button>
+      <button (click)="filterSelection('desktop')">Desktop developement</button>
       <button>Data science</button>
     </div>
     <!-- projects grid -->
     <div class="row grid">
-      <app-prj-template prjName="Minesweeper"></app-prj-template>
-      <app-prj-template prjName="Libex"></app-prj-template>
+      <app-prj-template class="prj web" prjName="Minesweeper" imgPath="../../assets/dummy.JPG"></app-prj-template>
+      <app-prj-template class="prj mobile" prjName="Icar" imgPath="../../assets/dummy.JPG"></app-prj-template>
+      <app-prj-template class="prj web" prjName="portfolio" imgPath="../../assets/dummy.JPG"></app-prj-template>
+      <app-prj-template class="prj desktop" prjName="Libex" imgPath="../../assets/dummy.JPG"></app-prj-template>
+      <app-prj-template class="prj desktop" prjName="hotel " imgPath="../../assets/dummy.JPG"></app-prj-template>
+
     </div>
   </div>
 </div>

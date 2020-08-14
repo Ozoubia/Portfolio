@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class PrjTemplateComponent implements OnInit {
 
   @Input() prjName: string;
+  @Input() imgPath: string;
 
   constructor() { }
 
