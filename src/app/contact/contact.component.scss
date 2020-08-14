@@ -10,3 +10,41 @@
     align-items: center;
   }
 }
+
+.title-style {
+  color: var(--light-gray-color);
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  i {
+    color: white;
+    margin: 0.2rem;
+  }
+
+  h6 {
+    color: white;
+    margin-left: 0.4rem;
+  }
+
+  h5 {
+    color: white;
+    margin-bottom: 2rem;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.msg-field {
+  resize: none;
+}
+
+@media (max-width: 992px) {
+  .contact-info {
+    margin-top: 2rem;
+  }
+}

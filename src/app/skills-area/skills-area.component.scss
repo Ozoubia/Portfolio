@@ -1,34 +1,44 @@
-.container{
-    margin-top: 6rem;
-    margin-bottom: 6rem;
-    .main-content{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
- }
-}
+.container {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 
-.skill-logo{
+  .main-content {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    
-    img{
-        height: 8rem;
-    }
+  }
 }
 
-.card-title{
-    display: flex;
-    justify-content: center;
+.skill-logo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    height: 8rem;
+  }
 }
 
-.card{
-    transition: box-shadow .3s;
+.card-title {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  transition: box-shadow .3s;
+  width: 18rem;
+  background-color: whitesmoke;
+
+
 }
 
 .card:hover {
-    box-shadow: 0 0 11px rgba(33,33,33,.2); 
-  }
+  box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+.title-style {
+  color: var(--light-gray-color);
+  margin-bottom: 3rem;
+}

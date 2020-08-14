@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 
 
 // added
-import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MainAreaComponent } from './main-area/main-area.component';
 import { AboutMeComponent } from './about-me/about-me.component';
@@ -14,8 +14,7 @@ import { SkillsAreaComponent } from './skills-area/skills-area.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
-import { ExperienceComponent } from './experience/experience.component';
-import { EducationComponent } from './education/education.component';
+
 
 
 @NgModule({
@@ -28,8 +27,6 @@ import { EducationComponent } from './education/education.component';
     ProjectsComponent,
     ContactComponent,
     FooterComponent,
-    ExperienceComponent,
-    EducationComponent,
 
   ],
   imports: [
@@ -38,6 +35,6 @@ import { EducationComponent } from './education/education.component';
     NgbModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,]
 })
 export class AppModule { }
