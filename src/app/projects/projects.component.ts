@@ -10,6 +10,23 @@ import { Component, OnInit } from '@angular/core';
 
 export class ProjectsComponent implements OnInit {
 
+  projectInformation = {
+    project1: {
+      techs: ["HTML", "CSS", "JAVASCRIPT", "MATERIALIZE  CSS"],
+      about: "The Classic minesweeper games made entirely in vanilla javascript and materilize css",
+      github: "https://github.com/Ozoubia/mine-Sweeper"
+    },
+    project2: {
+      techs: ["IONIC", "Laravel", "FIREBASE", "MYSQL", "GOOGLE STREET MAP"],
+      about: "",
+      github: ""
+    }
+
+  }
+
+
+
+
   constructor() { }
 
   ngOnInit(): void {
@@ -17,8 +34,6 @@ export class ProjectsComponent implements OnInit {
   }
 
   filterSelection(type) {
-
-
 
     let x = document.getElementsByClassName("prj");
 

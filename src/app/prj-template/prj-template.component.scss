@@ -10,10 +10,10 @@
     height: 90%;
     width: 100%;
 
-
     img {
       height: 100%;
       width: 100%;
+      cursor: pointer;
     }
   }
 
@@ -31,4 +31,64 @@
 .prjTitleStyle {
   color: white;
   margin-top: 0.5rem;
+}
+
+// used for modal when cliking a project image
+.close {
+  outline: none;
+  color: white;
+}
+
+
+.btn {
+  border: 1px solid white;
+  color: white;
+}
+
+// removing the outline of the button
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.techsUsed {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: var(--text-color);
+
+  div {
+    margin: 0.3rem;
+    padding: 0.2rem;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+  }
+}
+
+.modal-header {
+  background-color: var(--dark-color);
+
+  #modal-basic-title {
+    color: var(--light-gray-color);
+  }
+}
+
+.modal-body {
+  background-color: var(--dark-color);
+
+  // title style
+  h6 {
+    color: var(--light-gray-color);
+  }
+
+  // about section style
+  .aboutText {
+    color: var(--light-gray-color);
+  }
+
+}
+
+.modal-footer {
+  background-color: var(--dark-color);
 }

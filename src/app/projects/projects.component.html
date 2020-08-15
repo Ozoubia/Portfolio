@@ -11,11 +11,16 @@
     </div>
     <!-- projects grid -->
     <div class="row grid">
-      <app-prj-template class="prj web" prjName="Minesweeper" imgPath="../../assets/dummy.JPG"></app-prj-template>
-      <app-prj-template class="prj mobile" prjName="Icar" imgPath="../../assets/dummy.JPG"></app-prj-template>
+      <app-prj-template class="prj web" [prjInfo]="projectInformation.project1" prjName="Minesweeper"
+        imgPath="../../assets/dummy.JPG"></app-prj-template>
+      <app-prj-template class="prj mobile" [prjInfo]="projectInformation.project2" prjName="Icar transport app"
+        imgPath="../../assets/dummy.JPG">
+      </app-prj-template>
       <app-prj-template class="prj web" prjName="portfolio" imgPath="../../assets/dummy.JPG"></app-prj-template>
-      <app-prj-template class="prj desktop" prjName="Libex" imgPath="../../assets/dummy.JPG"></app-prj-template>
-      <app-prj-template class="prj desktop" prjName="hotel " imgPath="../../assets/dummy.JPG"></app-prj-template>
+      <app-prj-template class="prj desktop" prjName="Libex library management" imgPath="../../assets/dummy.JPG">
+      </app-prj-template>
+      <app-prj-template class="prj desktop" prjName="Hotel room management " imgPath="../../assets/dummy.JPG">
+      </app-prj-template>
 
     </div>
   </div>
