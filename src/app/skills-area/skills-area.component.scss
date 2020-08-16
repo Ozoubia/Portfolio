@@ -10,6 +10,13 @@
   }
 }
 
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
 .skill-logo {
   display: flex;
   justify-content: center;
@@ -27,16 +34,11 @@
 }
 
 .card {
-  transition: box-shadow .3s;
   width: 18rem;
   background-color: whitesmoke;
-
-
+  margin-top: 1.5rem;
 }
 
-.card:hover {
-  box-shadow: 0 0 11px rgba(33, 33, 33, .2);
-}
 
 .title-style {
   color: var(--light-gray-color);

@@ -1,19 +1,20 @@
 .container-fluid {
 
-  height: 20rem;
-  width: 25rem;
+  height: 15rem;
+  width: 20rem;
   padding: 0px;
-  margin: 0.8rem;
+  border: 1px solid white;
+  // margin: 0.8rem;
 
 
   .content {
-    height: 90%;
+    height: 100%;
     width: 100%;
 
     img {
       height: 100%;
       width: 100%;
-      cursor: pointer;
+
     }
   }
 
@@ -91,4 +92,60 @@
 
 .modal-footer {
   background-color: var(--dark-color);
+}
+
+// used to remove the padding in the modal
+.contentright {
+  padding-left: 0px;
+}
+
+.contentleft {
+  padding-right: 0px;
+}
+
+// used for the button overlay on the prj images
+.content {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content:hover .image {
+  opacity: 0.3;
+
+}
+
+.content:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: var(--dark-color);
+  color: white;
+  font-size: 0.8rem;
+}
+
+
+// carosel
+.carousel {
+  height: 100%;
 }

@@ -31,17 +31,6 @@
   color: var(--gray-color);
 }
 
-
-
-// // active links
-// .header .menu .navbar-nav .active a {
-//   -webkit-background-clip: text;
-//   background-clip: text;
-//   -webkit-text-fill-color: transparent;
-//   background: var(--primary-color);
-// }
-
-
 // the hover effect on menu items only works in large devices
 @media (min-width: 992px) {
   .navbar-nav a:hover {

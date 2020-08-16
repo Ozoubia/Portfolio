@@ -23,7 +23,6 @@ export class PrjTemplateComponent implements OnInit {
     // modal setting
     this.modalOptions = {
       backdrop: true,
-      // backdropClass: 'customBackdrop',
       centered: true
     }
   }
@@ -56,4 +55,6 @@ export class PrjTemplateComponent implements OnInit {
       window.open(link);
     }
   }
+
+
 }

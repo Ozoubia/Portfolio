@@ -1,20 +1,29 @@
 <div class="container-fluid">
   <!-- content div -->
   <div class="content">
-    <img src={{imgPath}} alt="Project image" class="img-fluid" (click)="prjImgClick(mymodal)">
+    <img src={{imgPath}} alt="Project image" class="img-fluid image">
+    <!-- show more overlay button  -->
+    <div class="middle">
+
+      <h5 class="prjTitleStyle">{{prjName}}</h5>
+      <button class="btn text" (click)="prjImgClick(mymodal)">Learn more</button>
+    </div>
   </div>
-  <!-- title div  -->
-  <div class="title">
-    <h4 class="prjTitleStyle">{{prjName}}</h4>
-  </div>
+
 
   <!-- showing modal when clicking on a project image  -->
   <ng-template #mymodal let-modal>
+
+
+
+    <!-- info column -->
+
     <div class="modal-header">
       <h4 class="modal-title" id="modal-basic-title">{{prjName}}</h4>
       <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
         <span aria-hidden="true">&times;</span>
       </button>
+
     </div>
     <div class="modal-body">
       <!-- technologies use  -->
@@ -51,5 +60,7 @@
         </button>
       </ng-template>
     </div>
+
+
   </ng-template>
 </div>
