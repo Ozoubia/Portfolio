@@ -4,13 +4,14 @@
     <div class="row">
 
       <!-- contact me form -->
-      <div class="col-lg-6 tst">
+      <div class="col-lg-6">
         <!-- Default form contact -->
-        <form class="text-center border border-light p-5" action="#!">
+        <form class="text-center border border-light p-5 pageclip-form"
+          action="https://send.pageclip.co/vfJbHH12WqjeZOG1S3QTQwFIP5qF9tPr" method="post">
           <!-- Name -->
-          <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+          <input type="text" name="name" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
           <!-- Email -->
-          <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+          <input type="email" name="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
 
 
           <!-- Message -->
@@ -18,7 +19,7 @@
             <textarea class="form-control rounded-0 msg-field" rows="6" placeholder="Message"></textarea>
           </div>
           <!-- Send button -->
-          <button class="btn btn-info btn-block" type="submit">Send</button>
+          <button class="btn btn-info btn-block pageclip-form__submit" type="submit">Send</button>
 
         </form>
 
