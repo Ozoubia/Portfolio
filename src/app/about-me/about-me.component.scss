@@ -10,8 +10,13 @@
 }
 
 .about-img {
+
   img {
-    width: 25rem;
+    // object-fit: cover;
+    // width: 25rem;
+    height: 25rem;
+    // width: auto;
+
   }
 }
 
